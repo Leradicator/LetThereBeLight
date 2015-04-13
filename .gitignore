@@ -1,0 +1,12 @@
+*.svg
+*.pdf
+*.sty
+*.aux
+*.toc
+*.log
+*.nav
+*.out
+*.snm
+*.swp
+*.synctex.gz
+pmetemplate03.tex
