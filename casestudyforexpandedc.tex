@@ -9,15 +9,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % Title and author(s)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{The \LaTeX\  template file for an article in the
-       $\Pi$ME Journal}
-\author{Primus Scriber\thanks{
-                  College of the Enlightenment}
-        \and
-        Theeco Author\thanks{
-                      The Virtual University
-                  }\thanks{This work was
-                  supported by NSB grant number G983578765401.}
+\title{A case study for expanding the complex plane
+        to a more attractive mathematical set}
+\author{Issam Outassourt\thanks{
+                    Bashar
+                  }\thanks{
+                    Marut    
+                  }\thanks{
+                    and GOD above all.
+                  }
         }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{article}
@@ -29,6 +29,7 @@
 % %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
+\usepackage{amsfonts}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % We use newtheorem to define theorem-like structures
 % %
@@ -61,8 +62,16 @@
 % abstract, keywords and Subject classification are optional.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-    This is a sample file.
-    You can use it as a guide for your submission.
+    The aim of this document is to challenge the common fact within the
+    mathematical world claiming that $\mathbb{C}$ is as complete as we
+    would think about it. This paper does not deny any commonly known
+    properties of the set such that ``$\mathbb{C}$ is an algebraic closure
+    of $\mathbb{R}$'' but rather blame the mathematic community for not
+    trying to extend this set and account for solving problems like the
+    following equation,
+    $$ z^{*}z = -1 $$
+    and their interest in widening the range of possibilities in modern
+    daily life mathematics.
 \end{abstract}
 
 % Most people don't use these, so they are "commented out"
@@ -78,6 +87,64 @@
 %%%%%%%%%%%%%%%%%%%%%%
 % % Here is the start of the Text
 %%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+While maintaining the consistency of the complex plane, we wish to introduce
+an innovative approach to construct a set that solves for equations of the type,
+
+\begin{equation}
+    z^{*}z = -1 
+\end{equation}
+
+where $^{*}$ denotes the conjugation sign known in $\mathbb{C}\ as\ (a+ib)^{*} = (a-ib)$.
+We will first briefly discuss the assumptions that denote the set that contains
+solutions to the equation $(1)$, assumptions which are regarded as axiomatic definitions.
+
+\begin{definition}
+    Let there be $\mathbb{L}$ such that $(1)$ admits at least one solution,
+    $l \in \mathbb{L}$
+
+    Following are a list of assumptions that hopefully characterize the set $\mathbb{L}$
+    \begin{enumerate}
+        \item $\mathbb{C}\ \subset\ \mathbb{L}$
+        \item $(\mathbb{L},+,.)$ is a vector space over the field $\mathbb{C}$
+        \item $(\mathbb{L},+,\cdot)$ is a field
+        \item The conjugation operator $^{*}$ keeps the same known qualities:
+            \begin{itemize}
+                \item distributivity over $+$: $(a+b)^{*}=a^{*}+b^{*}$
+                \item distributivity over $\cdot$: $(a \cdot b)^{*} = a^{*}\cdot b^{*}$
+                \item ivolutivity: $a^{**} = a$
+            \end{itemize}
+    \end{enumerate}
+\end{definition}
+
+
+\begin{proposition}
+    From the above $1.3$ it follows that equation $(1)$ does not admit
+    a unique solution. There are in fact infinitely many:
+    $$\forall \phi \in \mathbb{R}, (e^{i\phi}\cdot l)^{*}\cdot (e^{i\phi}\cdot l) = -1 $$
+    $$\forall n \in \mathbb{Z}, (l^{2n+1})^{*}\cdot (l^{2n+1}) = -1 $$
+
+    A justification for the second clause follows from the following result of $1.1$
+    that is, ``$l$ is not a zero of any element of $\mathbb{C}[X]$''. Otherwise,
+    $l$ would be in $\mathbb{C}$\\
+    For similar reasons, the following property holds as well:
+    $$ l^{*} \neq l $$ 
+\end{proposition}
+
+\section{Announcing the traits of the set}
+Following our introduction, we want to discuss some traits of the set
+$\mathbb{L}$ in the following section and show some properties that do not
+need formal proofs in that they are easy to understand.\\
+First, let us witness from $Proposition\ 1$ and earlier results that $l$
+is not distinguishable from any of its odd powers, nor of its phases with
+respect to equation $(1)$. We will further see to it that we solve $(1)$ in
+$\mathbb{L}$ and derive the solutions for equations of the type $y^{*}y = x$
+with generic values of $x$, yet being open to complete $\mathbb{L}$ in that aspect if needed.
+Regarding the dimensionality of $\mathbb{L}$ being a field as well as a $\mathbb{C}$ vector space,
+we can derive from the above results that $(l^{n})_{n\in \mathbb{Z}}$ is a linearly independent family.
+Thus $\mathbb{L}$ is infinite-dimensional. $\mathbb{C}$ being algebraically closed, together with the
+assumed field structure of $\mathbb{L}$ guarantees that property.
+
 \section{\LaTeX}
 Use sectioning commands for headings. Often longer articles are divided into a few sections.
 
