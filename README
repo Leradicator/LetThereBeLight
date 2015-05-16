@@ -1,0 +1,7 @@
+Please feel free to continue this work and refer to my other repo
+github.com/Leradicator/revelation-checker as to why I wasn't able to finish
+the job.
+
+The current progress of my work has been signed.
+To verify the signature, run the command:
+openssl dgst -sha256 -verify gpg-pub.pem -signature signature.sign casestudyforexpandedc.tex
